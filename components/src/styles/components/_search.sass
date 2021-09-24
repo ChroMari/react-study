@@ -1,0 +1,45 @@
+.search
+  padding: 24px 64px
+  border-bottom: 4px solid #333441
+
+.search__wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.search__inner
+  display: flex
+  align-items: center
+
+.search__icon
+  width: 24px
+  height: 24px
+  object-fit: cover
+  margin-right: 16px
+  &_notification
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: -5px
+      right: -3px
+      width: 12px
+      height: 12px
+      display: block
+      border-radius: 50%
+      background: linear-gradient(135deg, #9EA7FA 0%, #2336DA 100%)
+      box-shadow: 1px 1px 4px rgba(14, 22, 88, 0.4)
+
+.search__input
+  outline: none
+  background-color: transparent
+  border: none
+  padding: 12px 12px 12px 0
+
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: #C9CAD4
+  &::-webkit-input-placeholder
+    color: #C9CAD4
